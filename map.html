@@ -1,0 +1,440 @@
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script
+  src="http://code.jquery.com/jquery-1.6.4.js"
+  integrity="sha256-VJZPi1gK15WpYvsnBmcV0yga4a0Toov4rt1diFnrrjc="
+  crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <title></title>
+
+  <style type="text/css">
+    
+input:valid:not(:placeholder-shown) {
+  border-color: green;
+}
+
+input:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+input:invalid:not(:placeholder-shown) + .form__error {
+  display: block;
+}
+    .language { position: absolute; top: 5px; right: 5px; padding: 20px; }
+.english { display: inline; }
+.spanish { display: none; }
+
+.navigation { margin: 50px; }
+.navigation ul li { margin: 0px 10px; }
+
+.footer { padding-top: 100px;  margin: 50px; }
+
+
+      #map {
+        height: 400px;
+        width: 100%;
+       }
+         #map2 {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+
+<div class="language">
+  Language:
+  <select id="select">
+    <option id="spanish" value="english">ENG</option>
+    <option id="english" value="spanish">RU</option>
+    
+  </select>
+</div>
+
+
+<div class="navigation">
+  <!-- 1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 -->
+    <div class="english well">
+
+        <div class="container">
+    
+          <div  class="jumbotron">
+           <p> На Английском такой же</p>
+           
+          </div>
+        
+        <div class="d-flex row justify-content-center">Program</div>
+
+      <div class="dropdown-divider"></div>
+
+
+      <div class="container">
+	
+
+	 <div id="map"></div>
+	</div>
+        <div class="d-flex row justify-content-center">
+       
+        </div>
+
+     
+
+
+    </div>
+<div class="container " >
+   
+  
+      <div class="card card-outline-secondary">
+                        <div class="card-header">
+                            <h5> Registration form</h5>
+                        </div>
+                        <div class="card-block">
+                            <form class="form" role="form" autocomplete="off"   method="post" action="testmail.php"  >
+                                <div class="form-group row p-2">
+                                    <label class="col-lg-7 col-form-label form-control-label" ><h6>Enter your last name: <span class="required">*</span></h6></label>
+                                    <div class="col-lg-7">
+                                        <input class="form-control" type="text"  name="lname"  required>
+                                    </div>
+                                </div>
+                                <div class="form-group row p-2">
+                                    <label class="col-lg-7 col-form-label form-control-label"><h6>Enter your name:<span class="required">*</span> </h6> </label>
+                                    <div class="col-lg-7">
+                                        <input class="form-control" type="text"  name="uname"  required>
+                                    </div>
+                                </div>
+                               
+                              <div class="form-group row p-2">
+                                    <label class="col-lg-7 col-form-label form-control-label"><h6 >Enter your organization:<span class="required">*</span></h6></label>
+                                    <div class="col-lg-7">
+                                        <input class="form-control" type="text" name="org"  required> 
+                                    </div>
+                                </div>
+                              
+                               
+                                <div class="form-group row p-2">
+                                    <label class="col-lg-7 col-form-label form-control-label"><h6 >Enter your number: <span class="required">*</span></h6></label>
+                                    <div class="col-lg-7">
+                                        <input class="form-control" type="text"  name="tel" required>
+                                    </div>
+                                </div>
+                                 <div class="form-group row p-2">
+                                    <label class="col-lg-7 col-form-label form-control-label" name="email" required placeholder="Enter a valid email address"> <h6>Enter your email: <span class="required">*</span> </h6> </label>
+                                    <div class="col-lg-7">
+                                        <input class="form-control" type="text" required>
+                                    </div>
+                                </div>
+                              
+                               
+                                <div class="form-group row " style="padding-left: 2%;">
+                                    <label class="col-lg-7 col-form-label form-control-label"></label>
+                                    <div class="col-lg-7">
+                                        
+                                        <input type="submit"   class="btn btn-sm d-flex btn-primary "  value="Submit"  >
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /form user info -->
+                    </div>
+                    </div>
+                    </div>
+
+    <div class="container   d-flex justify-content-center"  >
+      <form method="post" action="testmail.php"  > 
+        
+        
+      
+    </div> <br>
+    <br> <br>
+    <br>
+ 
+    </div>
+      </form>
+   
+    </div> 
+
+   
+<!-- 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 -->
+    <div class="spanish" >
+      
+    
+         <div  class=" container">
+           <p> <img src="1.jpg" style="width:100%;"/></p>
+           
+          </div>
+        <br>
+        <br>
+        <div class="d-flex row justify-content-center">Программа</div>
+<br>
+        <br>
+        
+      <div class="dropdown-divider"></div>
+
+
+      <div class="container">
+	
+
+	 <div id="map"></div>
+</div>
+
+
+        <div class="d-flex row justify-content-center">
+          
+          
+          </div>
+     
+
+      
+ 
+    <div class="container">
+    
+      <div class="card card-outline-secondary">
+                        <div class="card-header">
+                            <h5 >  РЕГИСТРАЦИОННАЯ ФОРМА</h5>
+                        </div>
+                        <div class="card-block">
+                            <form class="form" role="form" autocomplete="off"   method="post" action="testmail.php"  >
+                                <div class="form-group row p-2">
+                                    <label class="col-lg-7 col-form-label form-control-label"><h6>Введите вашу Фамилию: <span class="required">*</span></h6></label>
+                                    <div class="col-lg-7">
+                                        <input class="form-control" type="text"  name="lname"  required>
+                                    </div>
+                                </div>
+                                <div class="form-group row p-2">
+                                    <label class="col-lg-7 col-form-label form-control-label"><h6>Введите Имя:<span class="required">*</span> </h6> </label>
+                                    <div class="col-lg-7">
+                                        <input class="form-control" type="text"  name="uname"  required>
+                                    </div>
+                                </div>
+                               
+                              <div class="form-group row p-2">
+                                    <label class="col-lg-7 col-form-label form-control-label"><h6 >Введите ваше Отчество:<span class="required">*</span></h6></label>
+                                    <div class="col-lg-7">
+                                        <input class="form-control" type="text" name="mname"  required> 
+                                    </div>
+                                </div>
+                                <div class="form-group row p-2">
+                                    <label class="col-lg-7 col-form-label form-control-label"><h6 >Наименование организации:<span class="required">*</span></h6></label>
+                                    <div class="col-lg-7">
+                                        <input class="form-control"   name="org"  required>
+                                    </div>
+                                </div>
+                                 <div class="form-group row p-2">
+                                    <label class="col-lg-7 col-form-label form-control-label"><h6 >Контактный номер: <span class="required">*</span></h6></label>
+                                    <div class="col-lg-7">
+                                        <input class="form-control"   name="tel"  required>
+                                    </div>
+                                </div>
+                               
+                                <div class="form-group row p-2">
+                                    <label class="col-lg-7 col-form-label form-control-label" required placeholder="Введите правильный электронный адрес"><h6 >Введите ваш email: <span class="required">*</span></h6></label>
+                                    <div class="col-lg-7">
+                                        <input class="form-control" type="text"  name="email"  required>
+                                    </div>
+                                </div>
+                                
+                              
+                               
+                                <div class="form-group row "  style="padding-left: 2%;">
+                                    <label class="col-lg-7 col-form-label form-control-label"></label>
+                                    <div class="col-lg-7">
+                                        
+                                        <input type="submit"   class="btn btn-sm d-flex btn-primary "  value="Отправить" >
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                  </div>
+                    <!-- /form user info -->
+                   <div class="container">
+	
+
+	 <div id="map2"></div>
+		</div>
+                    </div>
+                    </div>
+
+
+  </div>
+   
+  </ul>
+</div>
+
+
+    <div class="container">
+	
+
+	 <div id="map"></div>
+		</div>
+
+    <script>
+      function initMap() {
+        var uluru = {lat: 43.23576515, lng: 76.94008559};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+
+
+      var contentString = '<div id="content">'+
+        '<div id="siteNotice">'+
+        '</div>'+
+        '<h1 id="firstHeading" class="firstHeading">Большой театр</h1>'+
+        '<div id="bodyContent">'+
+        '<p>Госуда́рственный академи́ческий Большо́й теа́тр Росси́и, или просто Большой театр — один из крупнейших' +
+        'в России и один из самых значительных в мире театров оперы и балета.</p>'+
+        '<p><b>Веб-сайт:</b> <a href="http://www.bolshoi.ru/" target="_blank">bolshoi.ru</a>'+
+        '</p>'+
+        '</div>'+
+        '</div>';
+
+  // Создаем информационное окно
+  var infowindow = new google.maps.InfoWindow({
+     content: contentString,
+     maxWidth: 400
+  });
+      
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLhtqZKH3vPxZuxcAXSfZkPp5M07TmSRc&callback=initMap">
+    </script>
+  	    <script>
+      function initMap() {
+        var uluru = {lat: 43.23576515, lng: 76.94008559};
+        var map2 = new google.maps.Map(document.getElementById('map2'), {
+          zoom: 16,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+
+
+      var contentString = '<div id="content">'+
+        '<div id="siteNotice">'+
+        '</div>'+
+        '<h1 id="firstHeading" class="firstHeading">Большой театр</h1>'+
+        '<div id="bodyContent">'+
+        '<p>Госуда́рственный академи́ческий Большо́й теа́тр Росси́и, или просто Большой театр — один из крупнейших' +
+        'в России и один из самых значительных в мире театров оперы и балета.</p>'+
+        '<p><b>Веб-сайт:</b> <a href="http://www.bolshoi.ru/" target="_blank">bolshoi.ru</a>'+
+        '</p>'+
+        '</div>'+
+        '</div>';
+
+  // Создаем информационное окно
+  var infowindow = new google.maps.InfoWindow({
+     content: contentString,
+     maxWidth: 400
+  });
+      
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLhtqZKH3vPxZuxcAXSfZkPp5M07TmSRc&callback=initMap">
+    </script>
+
+  	<script
+  src="http://code.jquery.com/jquery-1.6.4.js"
+  integrity="sha256-VJZPi1gK15WpYvsnBmcV0yga4a0Toov4rt1diFnrrjc="
+  crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+  var languageSelect = document.getElementById('LanguageSelect');
+   var selectedLanguage = readCookie('language');
+  
+  if ((selectedLanguage == 'english') || (selectedLanguage == 'spanish') || (selectedLanguage == 'portuguese')) {
+  $(".language select").val(selectedLanguage);
+  var sel = $(".language select").val(selectedLanguage);
+  if (selectedLanguage == 'english') {
+           $(".english").css("display", "inline");
+           $(".spanish").css("display", "none"); 
+           $(".portuguese").css("display", "none"); 
+        }else if (selectedLanguage =='spanish') {
+           $(".english").css("display", "none");
+           $(".spanish").css("display", "inline");
+           $(".portuguese").css("display", "none");
+        }else if (selectedLanguage =='portuguese') {
+           $(".english").css("display", "none");
+           $(".spanish").css("display", "none");
+           $(".portuguese").css("display", "inline");
+        }
+    }
+
+  $(".language select").bind('change', function() {
+    //on change set cookie and...
+    setCookie('language', this.value, 365);
+    
+    //change css depending on what is selected
+        var sel = $(".language select").val();
+        if (sel=='english') {
+           $(".english").css("display", "inline");
+           $(".spanish").css("display", "none");
+           $(".portuguese").css("display", "none");
+        }else if (sel=='spanish') {
+           $(".english").css("display", "none");
+           $(".spanish").css("display", "inline");
+           $(".portuguese").css("display", "none"); 
+        }else if (sel=='portuguese') {
+           $(".english").css("display", "none");
+           $(".spanish").css("display", "none");
+           $(".portuguese").css("display", "inline"); 
+        
+        }
+        
+
+});
+
+function saveLanguage(cookieValue)
+{
+    var sel = document.getElementById('LanguageSelect');
+    setCookie('language', cookieValue, 365);
+}
+
+function setCookie(cookieName, cookieValue, nDays) {
+    var today = new Date();
+    var expire = new Date();
+
+    if (nDays==null || nDays==0)
+        nDays=1;
+
+    expire.setTime(today.getTime() + 3600000*24*nDays);
+    document.cookie = cookieName+"="+escape(cookieValue) + ";expires="+expire.toGMTString();
+}
+
+function readCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+  }
+  return null;
+}
+
+</script>
+<script
+  src="http://code.jquery.com/jquery-1.6.4.js"
+  integrity="sha256-VJZPi1gK15WpYvsnBmcV0yga4a0Toov4rt1diFnrrjc="
+  crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
+
+  center: {lat: 43.236358, lng: 76.94026},
